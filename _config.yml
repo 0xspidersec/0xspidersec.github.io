@@ -28,5 +28,5 @@ plugins:
   - jekyll-sitemap
 
 # Custom variables
-myname : "SUVADIP KAR"
+owner : "spidersec"
 year : "2019"

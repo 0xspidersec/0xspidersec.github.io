@@ -1,108 +1,11 @@
-<html>
-   <head>
-      <title>SPIDERSEC - BLOG OF A PENTESTER</title>
-      <link rel="icon" href="images/logo.png">
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-   </head>
-   <body>
-      <div id="particles-js" style="z-index: -1;"></div>
-      <nav>
-         <div class="appleNav">
-            <ul>
-               <li>
-                  <a href="#"><img class="avatar" style="margin-top: 50px;" src="images/logo.png" height="80"></a>
-               </li>
-               <li><a href="" class="menu-link"><b>BLOG</b></a></li>
-               <li><a href=""><b>PROJECTS</b></a></li>
-               <li><a href=""><b>GALLERY</b></a></li>
-               <li><a href="labs/index.html"><b>LABS</b></a></li>
-            </ul>
-         </div>
-      </nav>
-      <div class="container" style="margin-top:70px;" style="z-index: -1;">
-         <div class="col-md-4">
-            <div class="panel panel-default">
-               <div class="panel-body" style="padding:3px;">
-                  <img class="spiderprof" style="float:left;width: 100px; margin-right: 15px;" src="images/prof.jpg" height="100" width="100">
-                  <div style="float:center;margin-top:20px;color: #f5f5f5">
-                     <b><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SUVADIP KAR</font></b><br/><br/>
-                     <a href="https://twitter.com/spidersec">TWITTER</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://github.com/SpiderMate">GITHUB</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.linkedin.com/in/spidersec/">LINKEDIN</a>
-                  </div>
-               </div>
-            </div>
-            <div class="panel panel-default" style="margin-top: -10px;">
-               <div class="panel-body" style="padding:3px;">
-                  <div style="border-bottom: 1px #f5f5f5 solid; padding-bottom: 10px;float:center;margin:10px;color: #f5f5f5"><b>CURRENT HOLD'S</b></div>
-                  <div style="margin-left: 10px; margin-bottom:5px;">
-                     <img src="https://images.youracclaim.com/images/204242fb-0296-4a09-b0fc-ce1cde0e3f52/oscp-acclaim.png" height="70" weight="70">
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="col-lg-8">
-            <div class="panel panel-default">
-               <div class="panel-body" style="color: #f5f5f5; padding-left: 0px; padding-right: 0px">
-                  <div style="border-bottom: 1px #f5f5f5 solid; padding-bottom: 10px;padding-left: 10px;"><b>BLOG</b></div>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-            <div style="background-color: rgb(40, 42, 57);border-top: 1px solid #f5f5f5;padding-top: 5px;padding-left: 10px;margin-bottom: -10px;">
-            <ul class="pagination justify-content-end" style="margin: 0px;">
-               <li class="page-item">
-                  <a class="page-link" href="#" tabindex="-1">Previous</a>
-               </li>
-               <li class="page-item"><a class="page-link" href="#">1</a></li>
-               <li class="page-item"><a class="page-link" href="#">2</a></li>
-               <li class="page-item"><a class="page-link" href="#">3</a></li>
-               <li class="page-item">
-                  <a class="page-link" href="#">Next</a>
-               </li>
-            </ul>
-            </div>
-               </div>
-            </div>
+---
+layout: default
+---
 
-         </div>
-      </div>
-      <script src="particles.js"></script>
-      <script src="js/app.js"></script>
-      <script>
-         var count_particles, stats, update;
-         stats = new Stats;
-         stats.setMode(0);
-         stats.domElement.style.position = 'absolute';
-         stats.domElement.style.left = '0px';
-         stats.domElement.style.top = '0px';
-         document.body.appendChild(stats.domElement);
-         count_particles = document.querySelector('.js-count-particles');
-         update = function() {
-           stats.begin();
-           stats.end();
-           if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-             count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-           }
-           requestAnimationFrame(update);
-         };
-         requestAnimationFrame(update);
-      </script>
-   </body>
-</html>
+<ul>
+    {% for post in paginator.posts %}
+      <li>
+      <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+</ul>

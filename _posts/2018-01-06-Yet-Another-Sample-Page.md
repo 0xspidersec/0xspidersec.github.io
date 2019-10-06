@@ -99,7 +99,7 @@ end
 
 ### Large image
 
-![](https://i.pinimg.com/originals/0b/a3/d6/0ba3d60362c7e6d256cfc1f37156bad9.jpg){:height="300px" width="300px"}
+![](https://i.pinimg.com/originals/0b/a3/d6/0ba3d60362c7e6d256cfc1f37156bad9.jpg){:height="30%" width="30%"}
 
 
 ### Definition lists can be used with HTML syntax.

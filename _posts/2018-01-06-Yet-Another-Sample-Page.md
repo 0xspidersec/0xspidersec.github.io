@@ -1,5 +1,5 @@
 ---
-title: Another Sample Page
+title: Another Sample Page1
 published: true
 ---
 

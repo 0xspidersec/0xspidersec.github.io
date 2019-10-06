@@ -34,7 +34,7 @@
         <div style="background-color: rgb(40, 42, 57);border-top: 1px solid #f5f5f5;padding-top: 5px;padding-left: 10px;margin-bottom: 0px;">
 
           {% if paginator.total_pages > 1 %}
-          <ul class="pagination justify-content-end" style="margin-bottom: -10px;margin-top: 0px;">
+          <ul class="pagination justify-content-end" style="margin-bottom: -12px;margin-top: 0px;">
             {% if paginator.previous_page == 1 %}
             <li class="page-item"><a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}" class="page-link">Previous</a></li>
             {% elsif paginator.previous_page%}

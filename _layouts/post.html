@@ -5,11 +5,23 @@
 <body>
   {% include header.html %}
 
-<article>
-  <h2>{{ page.title }}</h2>
-  {{ page.date | date_to_string }}
-  {{ content }}
-</article>
+
+
+  <div class="">
+     <div class="panel panel-default">
+        <div class="panel-body" style="color: #f5f5f5; padding-left: 0px; padding-right: 0px">
+           <div style="border-bottom: 1px #f5f5f5 solid; padding-bottom: 10px;padding-left: 10px;"><b>{{ page.title }} - {{ page.date | date_to_string }}</b></div>
+           <div style="margin-top: 8px;">
+             {{ content }}
+           </div>
+     <div style="background-color: rgb(40, 42, 57);border-top: 1px solid #f5f5f5;padding-top: 5px;padding-left: 10px;margin-bottom: -15px;">
+
+
+     </div>
+        </div>
+     </div>
+
+  </div>
 
 
 {% include footer.html %}

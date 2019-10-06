@@ -209,7 +209,6 @@ background-color: #282A39;
 border: 1px solid #a6e22e;
 }
 
-
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
@@ -256,12 +255,11 @@ table {
 
 th {
   text-align: center;
-  border: 1px solid #b5e853;
+  border-bottom: 1px solid #b5e853;
   padding: 5px 10px;
 }
 
 td {
   text-align: center;
-  border: 1px solid #b5e853;
   padding: 5px 10px;
 }

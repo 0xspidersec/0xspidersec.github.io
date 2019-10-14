@@ -9,7 +9,6 @@ body {
 
  h2 { color: #e6db74; }
  p { color: white; }
- a { color: white; }
 
   .button {
   background-color: red;
@@ -37,6 +36,8 @@ a:link {
     left: 0 ; right: 0; bottom: 0;
     height:[footer-height]
     }
+
+
 
 .card {
   background: #282A39;

@@ -80,7 +80,7 @@ a:link {
 }
 
 .spiderprof {
-    border-right: 2px solid green;
+    border-right: 1px solid white; padding-right: 2px;
 }
 
 nav {
